@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: server_status_production
-  username: postgres
+  username: rails
   password: <%= ENV['SERVER_STATUS_DATABASE_PASSWORD'] %>
