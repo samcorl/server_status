@@ -14,6 +14,6 @@ namespace :slack do
               "username": "deploybot",
               "text": "#{text}",
               "icon_emoji": ":rocket:"}' \
-              https://hooks.slack.com/services/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}
+              https://hooks.slack.com/services/HOOK_URI}
   end
 end
