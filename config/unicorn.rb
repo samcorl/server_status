@@ -6,12 +6,12 @@ SHARED_PATH = "/var/www/server_status/shared"
 working_directory APP_PATH
 
 # Set unicorn options
-worker_processes 2
 preload_app true
+worker_processes 2
 timeout 30
 
 # Set up socket location
-listen "#{SHARED_PATH}/sockets/unicorn.sock", :backlog => 64
+listen "#{SHARED_PATH}/sockets/unicorn.sock"
 
 # Logging
 stderr_path "#{SHARED_PATH}/log/unicorn.stderr.log"
